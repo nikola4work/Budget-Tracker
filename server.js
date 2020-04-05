@@ -17,7 +17,7 @@ apiRoutes(app);
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds225294.mlab.com:25294/heroku_6d39dbwt", {
+mongoose.connect("mongodb://username:username2020@ds225294.mlab.com:25294/heroku_6d39dbwt", {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true
