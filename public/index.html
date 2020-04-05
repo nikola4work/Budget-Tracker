@@ -26,17 +26,17 @@
     </div>
     <div class="wrapper">
         <div class="row formRow">
-            <div class="col-md-12">
+            <div class="col-md-4">
                 <form>
-                    <div class="row">
+                    <div class="row title">
                         <div class="col">
-                            <label for="transaction" class="lead">Log a New Transaction:</label
+                            <label for="transaction" class="lead" style="color: black;">Log a New Transaction:</label
                 >
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <input type="text" id="transaction" placeholder="Name" />
+                <input type="text" id="transaction" placeholder="Description" />
               </div>
               <div class="col-md-12">
                 <input type="number" min="0" id="amount" placeholder="Amount" />
@@ -44,28 +44,33 @@
             </div>
             <div class="transaction-buttons">
               <button id="add-btn">
-                <i class="fa fa-plus lead"></i> Deposit
+                $ Deposit
               </button>
               <button id="sub-btn">
-                <i class="fa fa-minus lead"></i> Withdraw
+                 $ Spent
               </button>
             </div>
           </form>
+            </div>
+          <div class="col-md-8">
+            <div class="transactions">
+              <table>
+                <thead>
+                  <th>Date</th>
+                  <th>Transaction</th>
+                  <th>Amount</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+            
+            <canvas id="my-chart"></canvas>
+          </div>
         </div>
       </div>
+    
 
-      <div class="transactions">
-        <table>
-          <thead>
-            <th>Date</th>
-            <th>Transaction</th>
-            <th>Amount</th>
-          </thead>
-          <tbody id="tbody"></tbody>
-        </table>
-      </div>
-
-      <canvas id="my-chart"></canvas>
+     
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
