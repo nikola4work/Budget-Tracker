@@ -3,7 +3,7 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 var compression = require("compression");
 var apiRoutes = require("./routes/apiRoutes");
-var PORT = 9090;
+const PORT = process.env.PORT || 9090;
 
 var app = express();
 
@@ -17,11 +17,8 @@ apiRoutes(app);
 
 
 
+
 app.use(express.static("public"));
-
-
-
-
 
 
 var URI = process.env.MONGODB_URI || "mongodb://username:username2020@ds225294.mlab.com:25294/heroku_6d39dbwt";
@@ -30,7 +27,6 @@ mongoose.connect(URI, {
     useCreateIndex: true,
     useNewUrlParser: true
 });
-
 
 
 
