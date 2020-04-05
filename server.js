@@ -17,15 +17,14 @@ apiRoutes(app);
 
 app.use(express.static("public"));
 
-var URI = process.env.MONGODB_URI || "
-mongodb: //username:username2020@ds225294.mlab.com:25294/heroku_6d39dbwt
-    ";
+mongoose.Promise = global.Promise;
 
-mongoose.connect(URI, {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
-});
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb: //username:username2020@ds225294.mlab.com:25294/heroku_6d39dbwt", {
+        useMongoClient: true
+    }
+);
+
 
 
 
