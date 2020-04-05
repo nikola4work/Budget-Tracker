@@ -3,7 +3,7 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 var compression = require("compression");
 var apiRoutes = require("./routes/apiRoutes");
-var PORT = 8080;
+var PORT = 9090;
 
 var app = express();
 
