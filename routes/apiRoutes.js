@@ -1,8 +1,8 @@
 const db = require("../models");
 
-var apiRoutes = app => {
+const apiRoutes = app => {
     app.post("/api/budget/:type", (req, res) => {
-        var newBudget = req.body;
+        let newBudget = req.body;
         db.Budget.create(newBudget).then(data => {
             db.Budget.find({}).then(allTransactions => {
                 res.json(allTransactions);
