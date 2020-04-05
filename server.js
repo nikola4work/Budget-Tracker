@@ -17,7 +17,7 @@ apiRoutes(app);
 
 app.use(express.static("public"));
 
-var URI = process.env.MONGODB_URI || "mongodb://niko:nikola1993@ds031995.mlab.com:31995/heroku_qmg4lnc7";
+var URI = process.env.MONGODB_URI || "";
 
 mongoose.connect(URI, {
     useNewUrlParser: true,
