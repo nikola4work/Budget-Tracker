@@ -49,10 +49,10 @@ When brought back online:
 Please email me for further questions at nikola4work@gmail.com
 
 ## Technologies Used
-
+* MongoDB
+* Mongoose
 * Node.js
 * Express
-* Mongoose
 * Heroku/Robo 3T for Deployment
 
 
