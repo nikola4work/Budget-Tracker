@@ -6,6 +6,10 @@ if ("serviceWorker" in navigator) {
     });
 }
 
+$(".clear").click(function() {
+    $("td").empty();
+});
+
 $("#add-btn").on("click", event => {
     event.preventDefault();
     const newBudget = {
