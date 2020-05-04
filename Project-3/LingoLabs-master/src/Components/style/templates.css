@@ -91,9 +91,10 @@ Link {
     transition: .5s ease;
     border-radius: 5px;
     background-color: #FAFAFA;
-    color: #000000;
+     color: #000000;
     -webkit-box-shadow: 0px 0px 5px 0px #000000;
     box-shadow: 0px 0px 5px 0px #000000;
+    
 }
 
 .temp_container:hover .overlay {
@@ -113,6 +114,7 @@ Link {
     border: 1px solid black;
     box-shadow: 0px 0px 5px 0px black;
     transition: transform .2s;
+
 }
 
 .button:hover {
@@ -231,7 +233,6 @@ Link {
     width: 75%;
     border-left: none;
     min-height: 100vh;
-    margin-top: 100px;
 }
 
 #photo {
@@ -241,7 +242,6 @@ Link {
     width: 75%;
     border-left: none;
     min-height: 100vh;
-    margin-top: 100px;
 }
 
 #portfolio {
@@ -251,7 +251,6 @@ Link {
     width: 75%;
     border-left: none;
     min-height: 100vh;
-    margin-top: 100px;
 }
 
 #business {
@@ -261,7 +260,6 @@ Link {
     width: 75%;
     border-left: none;
     min-height: 100vh;
-    margin-top: 100px;
 }
 
 #restaurant {
@@ -271,7 +269,6 @@ Link {
     width: 75%;
     border-left: none;
     min-height: 100vh;
-    margin-top: 100px;
 }
 
 #estate {
@@ -281,5 +278,4 @@ Link {
     width: 75%;
     border-left: none;
     min-height: 100vh;
-    margin-top: -100px;
 }

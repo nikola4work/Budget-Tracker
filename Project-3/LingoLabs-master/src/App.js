@@ -17,7 +17,6 @@ import Login from "../src/Components/Login";
 import Home from "../src/Components/Home";
 import Contact from "./Components/Contact";
 import Container from "react-bootstrap/Container";
-
 import UserPortal from "./pages/userPortal";
 import API from "./utils/API";
 
@@ -26,7 +25,7 @@ function Navbar() {
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("nav").style.top = "1%";
+      document.getElementById("nav").style.top = "10px";
     } else {
       document.getElementById("nav").style.top = "-250px";
     }
@@ -75,6 +74,17 @@ function Navbar() {
     logingOut();
   };
 
+  // var prevScrollpos = window.pageYOffset;
+  // window.onscroll = function () {
+  //   var currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     document.getElementById("nav").style.top = "0";
+  //   } else {
+  //     document.getElementById("nav").style.top = "-250px";
+  //   }
+  //   prevScrollpos = currentScrollPos;
+  // };
+
   return (
     <Router>
       <div className="container-fluid navbar">
@@ -85,9 +95,10 @@ function Navbar() {
           <li>
             <Link to="/templates">Templates</Link>
           </li>
-
-          <img src={logo} className="logoImg" alt="Logo"></img>
-
+          <li>
+            {" "}
+            <img src={logo} className="logoImg" alt="Logo"></img>
+          </li>
           <li
             className={
               "margin " + (loggedin === "false" ? "visible" : "invisible")
