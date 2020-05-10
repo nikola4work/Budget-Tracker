@@ -11,7 +11,6 @@
 
 #nav {
     overflow: hidden;
-    position: fixed;
     transition: background .5s;
     min-width: 90vw;
     display: flex;
@@ -19,7 +18,7 @@
     list-style: none;
     font-family: 'Lobster', cursive;
     z-index: 1;
-    margin-left: ;
+
     padding: 20px;
   
 }
