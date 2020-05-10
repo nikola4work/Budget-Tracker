@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#317EFB" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800|Raleway&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>Budget Tracker</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Budget Tracker</h1>
+            <p class="lead">
+                Your current total is: <strong>$<span id="total">0</span></strong>
+            </p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="row formRow">
+            <div class="col-md-4">
+                <form>
+                    <div class="row title">
+                        <div class="col">
+                            <label for="transaction" class="lead" style="color: black;">Log a New Transaction:</label
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" id="transaction" placeholder="Description" />
+              </div>
+              <div class="col-md-12">
+                <input type="number" min="0" id="amount" placeholder="Amount" />
+              </div>
+            </div>
+            <div class="transaction-buttons">
+              <button id="add-btn">
+                $ Deposit
+              </button>
+              <button id="sub-btn">
+                 $ Withdraw
+              </button>
+            </div>
+          </form>
+            </div>
+          <div class="col-md-8">
+            <button class="clear">Clear</button>
+            <div class="transactions">
+              <table>
+                <thead>
+                  <th>Date</th>
+                  <th>Transaction</th>
+                  <th>Amount</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+            
+            <canvas id="my-chart"></canvas>
+          </div>
+        </div>
+      </div>
+    
+
+     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="/db.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

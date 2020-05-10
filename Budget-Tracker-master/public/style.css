@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+}
+
+.jumbotron {
+    background: radial-gradient(600px at 50% 50%, #fff 20%, #000 100%);
+}
+
+.display-4 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 70px;
+    transform: skewY(-10deg);
+    letter-spacing: 5px;
+    word-spacing: -8px;
+    color: tomato;
+    text-shadow: -1px -1px 0 firebrick, -2px -2px 0 firebrick, -3px -3px 0 firebrick, -4px -4px 0 firebrick, -5px -5px 0 firebrick, -6px -6px 0 firebrick, -7px -7px 0 firebrick, -8px -8px 0 firebrick, -30px 20px 40px dimgrey
+}
+
+button,
+input {
+    font-size: 1em;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+.lead {
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    color: tomato;
+    margin-top: 40px;
+}
+
+label {
+    font-weight: 800;
+}
+
+input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #e2e8f0;
+    margin: 5px;
+    text-align: center;
+}
+
+input:focus {
+    background-color: #ffffff;
+    border: 2px solid #cbd5e0;
+    outline: 0;
+}
+
+button {
+    background: #8a33fe;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+table {
+    width: 100%;
+}
+
+.error {
+    color: red;
+}
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 75%;
+}
+
+.jumbotron {
+    padding-top: 40px;
+}
+
+.total {
+    font-size: 150%;
+}
+
+.formRow {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.title {
+    margin-top: -20px;
+}
+
+.transactions {
+    text-align: center;
+    padding: 20px;
+    background-color: #0c0c0c;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+    border-radius: 5px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.transaction-buttons {
+    margin-top: 25px;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+#add-btn {
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(#34a853 30%, #159435 100%);
+    box-shadow: inset 0 -3px 0 0 #0000009d;
+}
+
+#sub-btn {
+    outline: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: linear-gradient(#ff5a59 10%, #ff2727 100%);
+    box-shadow: inset 0 -3px 0 0 #0000009d;
+}
+
+th {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #edf5e1;
+    padding-bottom: 10px;
+    border-bottom: 1px grey solid;
+}
+
+td {
+    font-size: 14px;
+}
